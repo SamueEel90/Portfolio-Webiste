@@ -1,0 +1,35 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "position": "Shift Leader (+oddelenie kvalita/HACCP)",
+      "company": "McDonald's",
+      "location": "Trenčín, Slovenská republika",
+      "startDate": "2022",
+      "endDate": "2024",
+      "responsibilities": [
+        "Zodpovednosť za celú smenu (25-35 ľudí), rozdelenie a delegovanie úloh",
+        "Plnenie cieľových časov a stanovených ukazovateľov",
+        "Pravidelná kontrola FoodSafety a kvality tovaru",
+        "Odvod peňazí, práca s hotovosťou",
+        "Nočné smeny, inventúry, uzatváranie POS a elektronického systému"
+      ]
+    },
+    {
+      "id": 2,
+      "position": "Vedúci oddelenia",
+      "company": "Kaufland Slovenská republika v.o.s.",
+      "location": "Trenčín, Slovenská republika",
+      "startDate": "2024",
+      "endDate": "Present",
+      "responsibilities": [
+        "Vedúci oddelenia nonFood",
+        "Kontrola kvality, správneho vyloženia,precenenia a prezentácie tovaru",
+        "Vyhodnocovanie strát, nastavenie plánu predaja, objednávky určitého tovaru",
+        "Inventúry, tréning zamestnancov",
+        "Plánovanie smien"
+      ]
+    }
+  ]
+}
+ 

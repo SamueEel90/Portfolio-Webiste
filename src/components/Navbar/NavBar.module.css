@@ -1,0 +1,102 @@
+@import "../../variables.css";
+
+.navBar {
+  font-family: "Inconsolata";
+  background-color: var(--background);
+  margin: 0;
+  padding: 0 20px; 
+  box-sizing: border-box;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  position: fixed; 
+  width: 100%; 
+  top: 0; 
+  z-index: 1000; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+
+
+.logo {
+  padding: 5px 10px; 
+}
+
+.logo a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.5rem; 
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: var(--primary);
+}
+
+.logo a:hover {
+  transform: scale(1.4); 
+  color: var(--accent);
+}
+.logo img {
+  width: 50px;
+}
+
+
+.navMid {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+
+.navMid li {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navMid li:hover {
+  color: var(--accent);
+  transform: scale(1.2);
+}
+
+.navMid a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navMid a:hover {
+  color: var(--accent);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .navBar {
+    padding: 0 10px; 
+  }
+
+  .navMid {
+    flex-direction: column; 
+    gap: 10px; 
+    padding-left: 0;
+  }
+
+  .navMid a {
+    font-size: 1.1rem; 
+    padding: 8px;
+  }
+
+  .logo a {
+    font-size: 1.2rem; 
+  }
+  
+  .resume a {
+    font-size: 1rem;
+  }
+}

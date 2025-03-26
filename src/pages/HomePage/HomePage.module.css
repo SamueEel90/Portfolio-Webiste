@@ -1,0 +1,212 @@
+@import '../../variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inconsolata';
+}
+
+body, html {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* Left Side (Hero + Footer) */
+.leftSide {
+  width: 50%;
+  background-color: var(--background);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text);
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  padding-left: 100px;
+  color: var(--primary);
+}
+
+.hero h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+.hero img {
+  width: 600px;
+  padding-left:100px ;
+}
+
+.hero p {
+  color: var(--secondary);
+  margin-bottom: 20px;
+  padding-left: 100px;
+  width: 650px;
+}
+
+.projectLink {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+/* Right Side (Scrollable Content) */
+.rightSide {
+  width: 50%;
+  padding: 40px;
+  background-color: var(--background);
+  color: var(--text);
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.rightSide::-webkit-scrollbar {
+  display: none;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.about h2 {
+  padding-top: 80px;
+  font-size: 38px;
+  color: var(--primary);
+}
+
+.about img {
+  max-width: 200px;
+  border-radius: 10%;
+}
+
+.about p {
+  color: var(--secondary);
+  width: 500px;
+  line-height: 16px;
+}
+
+.about a {
+  text-decoration: none;
+  color: var(--secondary);
+  padding-top: 20px;
+  display: inline-block;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.about a:hover {
+  transform: scale(1.4);
+}
+
+/* Experience Section */
+.experience h2 {
+  font-size: 38px;
+  color: var(--primary);
+  padding-top: 80px;
+}
+
+/* Certifications Section */
+.certification h2 {
+  padding-top: 80px;
+  font-size: 38px;
+  color: var(--primary);
+}
+
+/* Projects Section */
+.projects {
+  padding-top: 50px;
+  padding: 20px;
+  display: inline;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.projects h2 {
+  padding-top: 50px;
+  font-size: 38px;
+  color: var(--primary);
+}
+
+.projects div {
+  padding: 20px;
+}
+.info {
+  padding-top: 40px;
+  opacity: 20%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .container {
+    padding-top: 20px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftSide, .rightSide {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .projectLink {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding-top: 1px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .projects h2 {
+    padding-top: 50px;
+    font-size: 38px;
+    color: var(--primary);
+  }
+ 
+}

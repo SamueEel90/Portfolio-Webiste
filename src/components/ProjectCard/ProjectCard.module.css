@@ -1,0 +1,84 @@
+@import '../../variables.css';
+
+.card {
+  font-family: 'Inconsolata';
+  background-color: var(--background);
+  color: var(--text);
+  width: 850px;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  padding: 20px;
+  gap: 20px; 
+  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px var(--primary), 0px 0px 20px var(--primary);
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 250px;
+  height: 180px; 
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.card h1 {
+  color: var(--primary);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.techCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.tech {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  min-width: fit-content;
+  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.tech:hover {
+  box-shadow: 0px 0px 10px var(--primary), 0px 0px 20px var(--primary);
+  transform: scale(1.05);
+}
+
+.gitHub {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  color: var(--primary);
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.gitHub:hover {
+  color: var(--text);
+}

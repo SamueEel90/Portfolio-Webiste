@@ -1,0 +1,24 @@
+.resume {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resume button {
+  font-size: 1rem;
+  color: var(--text);
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 20px 0px ;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.resume img {
+  width: 50px;
+}
+
+.resume button:hover {
+  color: var(--accent);
+  transform: scale(1.2) !important;
+}

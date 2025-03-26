@@ -1,0 +1,21 @@
+@import '../../variables.css';
+
+.date {
+  color: var(--secondaryDark);
+  padding-bottom: 10px;
+  padding-top: 2px;
+}
+
+.experienceCard {
+  padding: 20px 0 40px 0;
+}
+
+.experienceCard h2{
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.experienceCard li {
+  color: var(--secondary);
+  list-style: none;
+}
