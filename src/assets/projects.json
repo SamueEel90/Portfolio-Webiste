@@ -7,10 +7,16 @@
       "id": 1,
       "name": "Portfolio Website",
       "description": "A personal portfolio showcasing projects and skills.",
-      "techStack": ["React", "TypeScript", "Vite", "CSS", "fklajflksafjd"],
+      "techStack": ["React", "TypeScript","CSS"],
       "picture": "/images/portfolio.png"
+    },
+    {
+      "id": 2,
+      "name": "Kaufland Storage Api",
+      "description": "A replica of kaufland software that they use in their scanners built with ASP.NET core WEB API and React",
+      "techStack": ["React", "TypeScript", "C#", "SQL Server", "Reudx" ],
+      "picture":"/images/Kaufland.png"
     }
- 
 
   ]
 }
