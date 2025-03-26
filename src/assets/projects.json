@@ -1,22 +1,19 @@
 
-
 {
   "projects": [
-
     {
       "id": 1,
       "name": "Portfolio Website",
       "description": "A personal portfolio showcasing projects and skills.",
-      "techStack": ["React", "TypeScript","CSS"],
-      "picture": "/images/portfolio.png"
+      "techStack": ["React", "TypeScript", "CSS"],
+      "picture": "src/assets/Images/Kaufland.png"
     },
     {
       "id": 2,
       "name": "Kaufland Storage Api",
       "description": "A replica of kaufland software that they use in their scanners built with ASP.NET core WEB API and React",
-      "techStack": ["React", "TypeScript", "C#", "SQL Server", "Reudx" ],
-      "picture":"/images/Kaufland.png"
+      "techStack": ["React", "TypeScript", "C#", "SQL Server", "Redux"],
+      "picture": "src/assets/Images/Kaufland.png"
     }
-
   ]
 }
