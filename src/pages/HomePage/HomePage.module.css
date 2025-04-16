@@ -11,12 +11,12 @@ body, html {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }
 
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 .container {
@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
   width: 100vw;
 }
 
-/* Left Side (Hero + Footer) */
+
 .leftSide {
   width: 50%;
   background-color: var(--background);
@@ -57,9 +57,16 @@ body::-webkit-scrollbar {
 
 .hero p {
   color: var(--secondary);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-left: 100px;
   width: 650px;
+}
+.hero img {
+width: 440px;
+height: 420px;
+padding-left: 100px;
+
+
 }
 
 .projectLink {
@@ -72,7 +79,7 @@ body::-webkit-scrollbar {
   padding-bottom: 0px;
 }
 
-/* Right Side (Scrollable Content) */
+
 .rightSide {
   width: 50%;
   padding: 40px;
@@ -86,7 +93,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* About Section */
 .about {
   display: flex;
   flex-direction: column;
@@ -100,10 +106,7 @@ body::-webkit-scrollbar {
   color: var(--primary);
 }
 
-.about img {
-  max-width: 200px;
-  border-radius: 10%;
-}
+
 
 .about p {
   color: var(--secondary);
@@ -125,21 +128,20 @@ body::-webkit-scrollbar {
   transform: scale(1.4);
 }
 
-/* Experience Section */
+
 .experience h2 {
   font-size: 38px;
   color: var(--primary);
   padding-top: 80px;
 }
 
-/* Certifications Section */
+
 .certification h2 {
   padding-top: 80px;
   font-size: 38px;
   color: var(--primary);
 }
 
-/* Projects Section */
 .projects {
   padding-top: 50px;
   padding: 20px;
@@ -162,7 +164,7 @@ body::-webkit-scrollbar {
   opacity: 20%;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 960px) {
   .container {
     padding-top: 20px;

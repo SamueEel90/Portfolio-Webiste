@@ -6,10 +6,17 @@
       "name": "Portfolio Website",
       "description": "A personal portfolio showcasing projects and skills.",
       "techStack": ["React", "TypeScript", "CSS"],
-      "picture": "src/assets/Images/Kaufland.png"
+      "picture": "src/assets/Images/PortfolioWebsite.png"
     },
     {
       "id": 2,
+      "name": "My Own Weather App",
+      "description": "A weather application that provides real-time weather updates.",
+      "techStack": ["React", "TypeScript", "CSS"],
+      "picture": "src/assets/Images/work-in-progres.jpg"
+    },
+    {
+      "id": 3,
       "name": "Kaufland Storage Api",
       "description": "A replica of kaufland software that they use in their scanners built with ASP.NET core WEB API and React",
       "techStack": ["React", "TypeScript", "C#", "SQL Server", "Redux"],

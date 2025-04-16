@@ -4,14 +4,16 @@
       "id": 1,
       "name": "Codecademy Full-Stack Engineer",
       "description": "Kurz pokrýva vývoj moderných webových aplikácií od front-endu po back-end. Zahŕňa technológie ako JavaScript, React, Node.js, Express a SQL, pričom sa zameriava na tvorbu dynamických používateľských rozhraní, správu databáz a budovanie RESTful API. Kurz kladie dôraz na praktické skúsenosti prostredníctvom projektov, kde sa účastníci naučia pracovať s autentifikáciou, bezpečnosťou aplikácií a nasadzovaním full-stack riešení.",
-      "stack": ["HTML","CSS ","JavaScript", "React","Redux", "Node.js", "Express", "SQL", "REST API"]
+      "stack": ["HTML","CSS ","JavaScript", "React","Redux", "Node.js", "Express", "SQL", "REST API"],
+      "picture": "src/assets/Images/codecademy2.png"
     }
     ,
     {
       "id": 2,
       "name": "VITA Academy C# .NET Programator",
       "description": "Kurz bol realizovaný v rámci projektu Zručnosti pre trh práce, úradom práce s cieľom podporiť odborné vzdelávanie a rozvoj IT zručností.Tento kurz pokrýva vývoj moderných softvérových aplikácií s využitím C# a .NET, pričom sa zameriava na objektovo orientované programovanie, správu databáz, tvorbu RESTful API a asynchrónne programovanie. Kurz kladie dôraz na praktické skúsenosti prostredníctvom projektov, kde sa účastníci naučia pracovať s autentifikáciou, bezpečnosťou aplikácií a nasadzovaním riešení v .NET ekosystéme.Účastníci sa oboznámia so základmi C# a objektovo orientovaného programovania (OOP), naučia sa pracovať s databázami a Entity Framework, vytvárať RESTful API v ASP.NET Core, a porozumejú princípom asynchrónneho programovania a multithreadingu. Kurz tiež zahŕňa kľúčové aspekty autentifikácie, autorizácie a bezpečnosti aplikácií, ako aj postupy na nasadzovanie aplikácií v .NET prostredí.Kurz poskytuje pevné základy pre kariéru C# programátora, pričom kladie dôraz na praktické projekty a reálne vývojárske scenáre.",
-      "stack": [  "C#",".NET","ASP.NET Core","Entity Framework","SQL"]
+      "stack": [  "C#",".NET","ASP.NET Core","Entity Framework","SQL"],
+      "picture": "src/assets/Images/certifikatVita.png"
     }
 
     

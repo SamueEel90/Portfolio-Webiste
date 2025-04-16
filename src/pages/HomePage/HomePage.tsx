@@ -28,6 +28,7 @@ interface Certifications {
   name: string;
   description: string;
   stack: [];
+  picture: string;
 }
 
 const HomePage: React.FC = () => {
@@ -57,6 +58,7 @@ const HomePage: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.leftSide}>
         <section className={styles.hero}>
+          <img src="/src/assets/Images/Profilovka.jpg" alt="Samuel Štofik" className={styles.heroImage} />
        
           <h1>Samuel Štofik</h1>
           <h2>Frontend/Full-Stack Developer</h2>
@@ -95,7 +97,7 @@ const HomePage: React.FC = () => {
 
         {/* Experience */}
         <section id="experience" className={styles.experience}>
-          <h2>Skúsenosti</h2>
+          <h2> Pracovné Skúsenosti</h2>
           {ExperienceData.map((experience) => (
             <div key={experience.id}>
               <ExperienceCard
@@ -117,6 +119,7 @@ const HomePage: React.FC = () => {
             <div key={certification.id}>
               <Certification
                 id={certification.id}
+                picture={certification.picture}
                 name={certification.name}
                 stack={certification.stack}
                 description={certification.description}
@@ -141,10 +144,7 @@ const HomePage: React.FC = () => {
           ))}
         </section>
 
-        {/* Info */}
-        <section>
-          <p className={styles.info}>Použité technológie: < strong>React, TypeScript, Vite, CSS modules</ strong> vo Visual Studio Code, nasadenie cez Vercel</p>
-        </section>
+     
       </div>
     </div>
   );
