@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
           <h1>Samuel Štofik</h1>
           <h2>Frontend/Full-Stack Developer</h2>
           <p>
-          Som mladý a ambiciózny junior developer, ktorý sa neustále učí a zdokonaľuje. V kóde hľadám riešenia na všetko, čo ma napadne, alebo čo by mi mohlo uľahčiť prácu. Každý problém vnímam ako výzvu a príležitosť naučiť sa niečo nové.
+         Vedúci oddelenia v Kauflande, programátor so skúsenosťami v JavaScripte, TypeScripte, C# a frameworkom React. Express, SQL, MongoDB. Študent aplikovanej informatiky na STU, aktívny bežec, cyklista a fanúšik motorsportu.
           </p>
         </section> 
         <Footer />
@@ -75,23 +75,14 @@ const HomePage: React.FC = () => {
           <h2>O mne</h2>
           <br />
           <p>
-            Som samouk v oblasti vývoja softvéru a tento rok začínam štúdium Aplikovanej informatiky a vývoja softvéru na Univerzite Mateja Bela. 
-            Po absolvovaní kurzu Codecademy Full-Stack Engineer som začal vyvíjať moderné webové aplikácie so zameraním na frontend aj backend.
-            <br />
-            <br />
-            Pracoval som s technológiami ako React, Redux, TypeScript, Node.js, Express, SQL a REST API.
-            <br /> 
-            V najbližších týždňoch absolvujem kurz VITA Academy C# .NET Programátor, aby som si rozšíril znalosti o C# a .NET.
-            <br />
-            Mojou prvou skúsenosťou ako programátor bola možnosť vývoja personálnych stránok pre kamarátov a okolie.
-            <br />
-            <br />
-            V rámci svojho voľného času som sa venoval aj replikácii zadaní od môjho brata, ktorý je medior frontend developer.
-            <br />
-            <br />
-            Rád tvorím spoľahlivý, efektívny a vizuálne príjemný softvér, ktorý rieši reálne problémy.
-            <br/>
-            Vo voľnom čase väčšinou behávam, bicyklujem, čítam, trávim čas s priateľkou a sledujem horory a motoršport.
+            
+Som vedúci oddelenia v Kauflande s predchádzajúcimi skúsenosťami ako shift leader v McDonald’s. Popri svojej práci sa venujem programovaniu, pričom ovládam jazyky JavaScript, TypeScript, C# a dalšie technológie ako Express, SQL, MongoDB, React a Redux.
+<br />
+Moje osobné projekty sú Plánovač Smien a Kontrola Dochádzky  ktoré som vyvinul s cieľom zlepšiť a zefektívniť pracovné procesy na mojom oddelení. Tieto projekty reflektujú moje praktické skúsenosti a snahu prinášať inovácie, ktoré priamo zvyšujú kvalitu práce.
+<br />
+Mojím cieľom je postupne sa presunúť do IT oblasti ako programátor a neustále sa vzdelávať, preto tento rok začínam štúdium aplikovanej informatiky a vývoja softvéru na STU Bratislava. Zároveň kladiem veľký dôraz na zdravý a aktívny životný štýl — venujem sa behu, horskej cyklistike, gamingu a motorsportu.
+<br />
+Verím, že kombinácia technických zručností, praktických skúseností a osobných záujmov mi umožňí prinášať hodnotu do každého projektu, na ktorom pracujem.
           </p>
         </section> 
 
@@ -114,7 +105,7 @@ const HomePage: React.FC = () => {
 
         {/* Certifications */}
         <section id="certifications" className={styles.certification}>
-          <h2>Certifikáty</h2>
+          <h2>Vzdelanie a Certifikáty</h2>
           {CertificationData.map((certification) => (
             <div key={certification.id}>
               <Certification

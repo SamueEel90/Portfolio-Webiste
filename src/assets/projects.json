@@ -10,17 +10,54 @@
     },
     {
       "id": 2,
-      "name": "My Own Weather App",
-      "description": "A weather application that provides real-time weather updates.",
+      "name": "Weather App",
+      "description": "Weather App ti prináša aktuálne a presné informácie o počasí vo tvojej lokalite rýchlo a jednoducho. Vďaka integrácii s OpenWeatherMap API získava spoľahlivé meteorologické dáta a ponúka prehľadné a používateľsky prívetivé rozhranie na každodenné použitie.",
+      "techStack": ["React", "TypeScript", "CSS"],
+      "picture": "src/assets/Images/WeatherApp.png"
+    },
+    {
+      "id": 3,
+      "name": "Native Weather App",
+      "description": "Native Weather App je jednoduchá a rýchla mobilná aplikácia, ktorá poskytuje aktuálne počasie pre tvoju lokalitu. Využíva API OpenWeatherMap na spoľahlivé získavanie meteorologických dát a ponúka prehľadné a intuitívne používateľské rozhranie pre každodenné použitie.",
+      "techStack": ["React", "TypeScript","TailwindCSS", "Redux"],
+      "picture": "src/assets/Images/NativeWeatherApp.png"
+    },
+    {
+      "id": 4,
+      "name": "Kaufland Attendance Checker",
+      "description": "Aplikácia slúžiaca vedúcemu smeny na kontrolu dochádzky zamestnancov a následné uzatvorenie obchodného dňa. Zjednodušuje správu zmien a zabezpečuje presný prehľad o pracovnej aktivite v prevádzke.",
+      "techStack": ["C#"],
+      "picture": "src/assets/Images/AttendanceChecker.png"
+    },  
+    {
+      "id": 5,
+      "name": "Shift Planner 1.0",
+      "description": "A WPF application that allows employees to plan their shifts and view their schedules.",
+      "techStack": ["C#"],
+      "picture": "src/assets/Images/work-in-progres.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Shift Planner 2.0",
+      "description": "Upgrtaded version of Shift Planner 1.0 with new features and improvements.",
       "techStack": ["React", "TypeScript", "CSS"],
       "picture": "src/assets/Images/work-in-progres.jpg"
     },
     {
-      "id": 3,
+      "id": 7,
+      "name": "Crypto Portfolio Tracker",
+      "description": "A web application that allows users to track their cryptocurrency portfolio.",
+      "techStack": ["React", "TypeScript", "CSS"],
+      "picture": "src/assets/Images/work-in-progres.jpg"
+    },
+    {
+      "id": 8,
       "name": "Kaufland Storage Api",
-      "description": "A replica of kaufland software that they use in their scanners built with ASP.NET core WEB API and React",
+      "description": "Webové API vyvinuté pomocou ASP.NET Core a React pre efektívnu správu zásob ,dochádzky, zmien a toku tovaru  v rámci Kaufland prevádzky. Projekt poskytuje modulárnu a škálovateľnú architektúru umožňujúcu jednoduchú integráciu a rozšírenie funkcií. Cieľom replikovat sýstem skenerov a pridat nove lepšie funkcie.",
       "techStack": ["React", "TypeScript", "C#", "SQL Server", "Redux"],
       "picture": "src/assets/Images/Kaufland.png"
     }
+    
   ]
+  
 }

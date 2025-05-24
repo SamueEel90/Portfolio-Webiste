@@ -2,34 +2,45 @@
   "experiences": [
     {
       "id": 1,
-      "position": "Shift Leader (+oddelenie kvalita/HACCP)",
+      "position": "Shift leader (+oddelenie kvality/HACCP)",
       "company": "McDonald's",
       "location": "Trenčín, Slovenská republika",
       "startDate": "2022",
       "endDate": "2024",
       "responsibilities": [
-        "Zodpovednosť za celú smenu (25-35 ľudí), rozdelenie a delegovanie úloh",
-        "Plnenie cieľových časov a stanovených ukazovateľov",
-        "Pravidelná kontrola FoodSafety a kvality tovaru",
-        "Odvod peňazí, práca s hotovosťou",
-        "Nočné smeny, inventúry, uzatváranie POS a elektronického systému"
+        "Zodpovednosť za smenu (25-35 ľudí), rozdelenie a delegovanie úloh",
+        "Plnenie cieľových časov a ukazovateľov",
+        "Kontrola FoodSafety a kvality tovaru",
+        "Práca s hotovosťou, nočné smeny, inventúry, uzatváranie POS a systémov"
       ]
     },
     {
       "id": 2,
-      "position": "Vedúci oddelenia",
+      "position": "Vedúci skupiny tovaru nonFood (1. level manažmentu)",
+      "company": "Kaufland Slovenská republika v.o.s.",
+      "location": "Trenčín, Slovenská republika",
+      "startDate": "2024",
+      "endDate": "2024",
+      "responsibilities": [
+        "Vedúci oddelenia nonFood",
+        "Kontrola kvality a prezentácie tovaru",
+        "Zodpovednosť za plnenie cieľov oddelenia",
+        "Tréning zamestnancov"
+      ]
+    },
+    {
+      "id": 3,
+      "position": "Vedúci oddelenia (2. level manažmentu)",
       "company": "Kaufland Slovenská republika v.o.s.",
       "location": "Trenčín, Slovenská republika",
       "startDate": "2024",
       "endDate": "Present",
       "responsibilities": [
-        "Vedúci oddelenia nonFood",
-        "Kontrola kvality, správneho vyloženia,precenenia a prezentácie tovaru",
-        "Vyhodnocovanie strát, nastavenie plánu predaja, objednávky určitého tovaru",
-        "Inventúry, tréning zamestnancov",
-        "Plánovanie smien"
+        "Vedenie celého nepotravinového oddelenia",
+        "Plnenie cieľov zverených oddelení",
+        "Vyhodnocovanie strát, plánovanie predaja a objednávok",
+        "Inventúry a plánovanie zmien"
       ]
     }
   ]
 }
- 
