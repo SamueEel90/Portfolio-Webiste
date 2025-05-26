@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Native Weather App",
+      "description": "Jednoduchá a rýchla mobilná aplikácia, ktorá poskytuje aktuálne počasie. Využíva API OpenWeatherMap na získavanie meteorologických dát a ponúka prehľadné a intuitívne používateľské rozhranie.",
+      "techStack": ["React Native","Expo", "TypeScript", "TailwindCSS", "Redux"],
+      "picture": "WeatherAppNative.png"
+    },
+    {
+      "id": 2,
+      "name": "Crypto Portfolio Tracker",
+      "description": "Webové  API na sledovanie kryptomien a správu investičného portfólia.Umožňuje monitorovanie cien, výkonnosti a pokročilých metrík kryptomien v reálnom čase pomocou GeckoAPI. Integrácia s Binance API umožňuje zobrazenie hodnoty peňaženky používateľa a vykonávanie automatizovaných obchodov na platforme Binance.",
+      "techStack": ["React", "TypeScript", "TailwindCSS", "Express","Node"],
+      "picture": "CryptoTracker.png"
+    },
+   
+    {
+      "id": 3,
+      "name": "Kaufland Scanner API",
+      "description": "API ktoré replikuje softvér skenerov v Kauflande. Umožňuje kontrolu stavu zásob, korekcie, úpravu cien, spracovanie vráteného tovaru, príjem tovaru, vytváranie objednávok a správu používateľov.",
+      "techStack": ["C#", "React", "TypeScript", ".NET", "SQL Server"],
+      "picture": "Kaufland.png"
+    },
+    {
+      "id": 4,
+      "name": "React Weather App",
+      "description": "Jednoducha jednostranková webová aplikácia, ktorá poskytuje aktuálne počasie. Využíva API OpenWeatherMap.",
+      "techStack": ["React", "TypeScript", "CSS"],
+      "picture": "WeatherApp.png"
+    },
+    {
+      "id": 5,
+      "name": "Kaufland Attendance Checker",
+      "description": "Aplikácia slúžiaca vedúcemu smeny na kontrolu dochádzky zamestnancov a následné uzatvorenie obchodného dňa. Zjednodušuje správu zmien a zabezpečuje presný prehľad o pracovnej aktivite v prevádzke.",
+      "techStack": ["C#"],
+      "picture": "work-in-progres.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Shift Planner",
+      "description": "Aplikácia pre plánovanie zmien zamestnancov, ktorá umožňuje vedúcemu smeny efektívne spravovať rozvrhy zamestnancov a optimalizovať pracovné zmeny.",
+      "techStack": ["C#"],
+      "picture": "work-in-progres.jpg"
+    },
+     {
+      "id": 7,
+      "name": "Attend Flow",
+      "description": "Mobilna aplikacia ktora veducemu smeny posiela notifikacie o pohybe zamestnancov (prestavka, príchod, odchod) a umožňuje mu kontrolovať dochádzku zamestnancov.",
+      "techStack": ["React Native, TypeScript, TailwindCSS"],
+      "picture": "work-in-progres.jpg"
+    },
+   
+    {
+      "id": 8,
+      "name": "Crypto Tracker Mobile",
+      "description": "Mobilná verzia Crypto Portfolio Tracker aplikácie, ktorá umožňuje používateľom sledovať svoje kryptomeny a investičné portfólio na cestách.",
+      "techStack": ["React-Native", "TypeScript", "TailwindCSS", "Express","Node"],
+      "picture": "work-in-progres.jpg"
+    }
+  ]
+}

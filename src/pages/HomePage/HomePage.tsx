@@ -37,33 +37,41 @@ const HomePage: React.FC = () => {
   const [CertificationData, setCertificationData] = useState<Certifications[]>([]);
 
   useEffect(() => {
-    fetch("/src/assets/projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjectData(data.projects));
-  }, []);
+    const fetchData = async () => {
+      try {
+        const [projectsRes, experiencesRes, certificationsRes] = await Promise.all([
+          fetch("/projects.json"),
+          fetch("/experiences.json"),
+          fetch("/certifications.json"),
+        ]);
 
-  useEffect(() => {
-    fetch("/src/assets/experiences.json")
-      .then((res) => res.json())
-      .then((data) => setExperienceData(data.experiences));
-  }, []);
+        const [projectsData, experiencesData, certificationsData] = await Promise.all([
+          projectsRes.json(),
+          experiencesRes.json(),
+          certificationsRes.json(),
+        ]);
 
-  useEffect(() => {
-    fetch("src/assets/certifications.json")
-      .then((res) => res.json())
-      .then((data) => setCertificationData(data.certifications));
+        setProjectData(projectsData.projects);
+        setExperienceData(experiencesData.experiences);
+        setCertificationData(certificationsData.certifications);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
     <div className={styles.container}>
       <div className={styles.leftSide}>
         <section className={styles.hero}>
-          <img src="/src/assets/Images/Profilovka.jpg" alt="Samuel Štofik" className={styles.heroImage} />
+          <img src="Profilovka.jpg" alt="Samuel Štofik" className={styles.heroImage} />
        
           <h1>Samuel Štofik</h1>
           <h2>Frontend/Full-Stack Developer</h2>
           <p>
-         Vedúci oddelenia v Kauflande, programátor so skúsenosťami v JavaScripte, TypeScripte, C# a frameworkom React. Express, SQL, MongoDB. Študent aplikovanej informatiky na STU, aktívny bežec, cyklista a fanúšik motorsportu.
+         Vedúci oddelenia v Kauflande.Frontend/Full-Stack Programátor.Aktívny bežec, cyklista a fanúšik motorsportu.
           </p>
         </section> 
         <Footer />
@@ -75,14 +83,16 @@ const HomePage: React.FC = () => {
           <h2>O mne</h2>
           <br />
           <p>
-            
-Som vedúci oddelenia v Kauflande s predchádzajúcimi skúsenosťami ako shift leader v McDonald’s. Popri svojej práci sa venujem programovaniu, pričom ovládam jazyky JavaScript, TypeScript, C# a dalšie technológie ako Express, SQL, MongoDB, React a Redux.
-<br />
-Moje osobné projekty sú Plánovač Smien a Kontrola Dochádzky  ktoré som vyvinul s cieľom zlepšiť a zefektívniť pracovné procesy na mojom oddelení. Tieto projekty reflektujú moje praktické skúsenosti a snahu prinášať inovácie, ktoré priamo zvyšujú kvalitu práce.
-<br />
-Mojím cieľom je postupne sa presunúť do IT oblasti ako programátor a neustále sa vzdelávať, preto tento rok začínam štúdium aplikovanej informatiky a vývoja softvéru na STU Bratislava. Zároveň kladiem veľký dôraz na zdravý a aktívny životný štýl — venujem sa behu, horskej cyklistike, gamingu a motorsportu.
-<br />
-Verím, že kombinácia technických zručností, praktických skúseností a osobných záujmov mi umožňí prinášať hodnotu do každého projektu, na ktorom pracujem.
+           
+            <br />
+            Som vedúci oddelenia v Kauflande s predchádzajúcimi skúsenosťami ako shift leader v McDonald’s. Popri svojom zamestnaní sa aktívne venujem programovaniu. Môj tech stack je JavaScript, TypeScript, C#, React, React-Native, Express, Node.js, SQL, MongoDB a Redux.
+            <br />
+            Mojím cieľom je postupne sa presunúť do IT oblasti ako programátor a neustále sa vzdelávať.
+            <br />
+            Tento rok začnem štúdium aplikovanej informatiky na Slovenskej technickej univerzite v Bratislave.
+            Zároveň kladiem veľký dôraz na zdravý a aktívny životný štýl — venujem sa behu, horskej cyklistike a motorsportu.
+            <br />
+            Verím, že kombinácia technických zručností, praktických skúseností a osobných záujmov mi umožní prinášať hodnotu do každého projektu, na ktorom pracujem.
           </p>
         </section> 
 
@@ -105,7 +115,7 @@ Verím, že kombinácia technických zručností, praktických skúseností a os
 
         {/* Certifications */}
         <section id="certifications" className={styles.certification}>
-          <h2>Vzdelanie a Certifikáty</h2>
+          <h2>Certifikáty</h2>
           {CertificationData.map((certification) => (
             <div key={certification.id}>
               <Certification

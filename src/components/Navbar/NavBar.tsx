@@ -1,13 +1,13 @@
 import ResumeButton from "../ResumeButton/ResumeButton";
 import styles from "./NavBar.module.css";
-import logo from '../../assets/Images/monogram.png';
+
 
 const NavBar: React.FC = () => {
   return (
     <nav className={styles.navBar}>
       <div className={styles.logo}>
         <a href="/">
-          <img src={logo} alt="Logo" />
+          <img src="/monogram.png" alt="Logo" />
         </a>
       </div>
       <div className={styles.navMid}>
