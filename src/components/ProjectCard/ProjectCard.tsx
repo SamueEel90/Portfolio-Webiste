@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, techStack,
             <p className={styles.tech} key={tech}>{tech}</p>
           ))}
         </div>
-        <p className={styles.gitHub}>Link to Github</p>
+        <a href="https://github.com/SamueEel90?tab=repositories" target="_blank" rel="noopener noreferrer" className={styles.gitHub}>Link to Github</a>
       </div>
     </div>
   );

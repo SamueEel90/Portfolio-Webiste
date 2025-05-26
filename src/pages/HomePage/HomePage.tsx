@@ -71,7 +71,7 @@ const HomePage: React.FC = () => {
           <h1>Samuel Štofik</h1>
           <h2>Frontend/Full-Stack Developer</h2>
           <p>
-         Vedúci oddelenia v Kauflande.Frontend/Full-Stack Programátor.Aktívny bežec, cyklista a fanúšik motorsportu.
+         Vedúci oddelenia v Kauflande.Frontend/Full-Stack Programátor.Aktívny bežec, cyklista a fanúšik motoršportu.
           </p>
         </section> 
         <Footer />
