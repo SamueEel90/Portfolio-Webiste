@@ -6,13 +6,13 @@ const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <ul>
         <li>
-          <img src="/linkedin.png" alt="l" />
+          <img src="/linkedin.png" alt="linkedin" />
         </li>
         <li>
-          <img src="/instagram.png" alt="i" />
+          <img src="/instagram.png" alt="instagram" />
         </li>
         <li>
-          <img src="/email.png"alt="e" />
+          <img src="/email.png"alt="enail" />
         </li>
       </ul>
     </footer>
