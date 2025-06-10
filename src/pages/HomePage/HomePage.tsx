@@ -5,6 +5,7 @@ import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
 import styles from "./HomePage.module.css";
 import Footer from "../../components/Footer/Footer";
 import Certification from "../../components/Certification/Certification";
+import TopProjectCard from "../../components/TopProject/TopProjectCard";
 
 interface Projects {
   id: number;
@@ -30,30 +31,40 @@ interface Certifications {
   stack: [];
   picture: string;
 }
+interface TopProject {
+  name: string;
+  description: string;
+  techStack: string[];
+  pictures: string[];
+  githubLink: string;
+}
 
 const HomePage: React.FC = () => {
   const [ProjectData, setProjectData] = useState<Projects[]>([]);
   const [ExperienceData, setExperienceData] = useState<Experiences[]>([]);
   const [CertificationData, setCertificationData] = useState<Certifications[]>([]);
-
-  useEffect(() => {
+  const [topProjectData, setTopProjectData] = useState<TopProject | null>(null);;
+   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [projectsRes, experiencesRes, certificationsRes] = await Promise.all([
+        const [projectsRes, experiencesRes, certificationsRes, topProjectRes] = await Promise.all([
           fetch("/projects.json"),
           fetch("/experiences.json"),
           fetch("/certifications.json"),
+          fetch("/topProject.json")
         ]);
 
-        const [projectsData, experiencesData, certificationsData] = await Promise.all([
+        const [projectsData, experiencesData, certificationsData, topProjectJson] = await Promise.all([
           projectsRes.json(),
           experiencesRes.json(),
           certificationsRes.json(),
+          topProjectRes.json()
         ]);
 
         setProjectData(projectsData.projects);
         setExperienceData(experiencesData.experiences);
         setCertificationData(certificationsData.certifications);
+        setTopProjectData(topProjectJson); // predpokladáme objekt, nie pole
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -129,9 +140,12 @@ const HomePage: React.FC = () => {
           ))}
         </section>
 
+      
+
         {/* Projects */}
         <section id="projects" className={styles.projects}>
-          <h2>Projekty</h2>
+          <h2>Projekty</h2> 
+          {topProjectData && <TopProjectCard {...topProjectData} />}
           {ProjectData.map((project) => (
             <div key={project.id}>
               <ProjectCard

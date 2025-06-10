@@ -1,0 +1,126 @@
+@import '../../variables.css';
+
+.card {
+  margin-top: 10px;
+  font-family: 'Inconsolata';
+  background-color: var(--background);
+  color: var(--text);
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 12px var(--primary), 0px 0px 24px var(--primary);
+  transform: scale(1.01);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardContent h1 {
+  font-size: 28px;
+  color: var(--primary);
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.techCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.gitHub {
+  font-size: 15px;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.gitHub:hover {
+  color: var(--text);
+}
+
+.imageGallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.phoneImage {
+  width: 35%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.phoneImage:hover {
+  transform: scale(1.02);
+}
+
+.sideImages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 65%;
+}
+
+.sideImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.sideImage:hover {
+  transform: scale(1.02);
+}
+
+/* Responzívne pre menšie obrazovky */
+@media (max-width: 768px) {
+  .imageGallery {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .phoneImage,
+  .sideImages {
+    width: 100%;
+  }
+
+  .sideImages {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .sideImage {
+    width: 50%;
+  }
+}
