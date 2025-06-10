@@ -7,14 +7,7 @@
       "techStack": ["React Native","Expo", "TypeScript", "TailwindCSS", "Redux"],
       "picture": "WeatherAppNative.png"
     },
-    {
-      "id": 2,
-      "name": "Crypto Portfolio Tracker",
-      "description": "Webové  API na sledovanie kryptomien a správu investičného portfólia.Umožňuje monitorovanie cien, výkonnosti a pokročilých metrík kryptomien v reálnom čase pomocou GeckoAPI. Integrácia s Binance API umožňuje zobrazenie hodnoty peňaženky používateľa a vykonávanie automatizovaných obchodov na platforme Binance.",
-      "techStack": ["React", "TypeScript", "TailwindCSS", "Express","Node"],
-      "picture": "CryptoTracker.png"
-    },
-   
+
     {
       "id": 3,
       "name": "Kaufland Scanner API",
