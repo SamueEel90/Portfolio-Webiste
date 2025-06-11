@@ -96,7 +96,7 @@ const HomePage: React.FC = () => {
           <p>
            
             <br />
-            Som vedúci oddelenia v Kauflande s predchádzajúcimi skúsenosťami ako shift leader v McDonald’s. Popri svojom zamestnaní sa aktívne venujem programovaniu. Môj tech stack je JavaScript, TypeScript, C#, React, React-Native, Express, Node.js, SQL, MongoDB a Redux.
+            Som vedúci oddelenia v Kauflande s predchádzajúcimi skúsenosťami ako shift leader v McDonald’s. Popri svojom zamestnaní sa aktívne venujem programovaniu. Pracujem s JavaScript, TypeScript, C#, React, React-Native, Next, Express, Node.js, SQL, MongoDB a Redux.
             <br />
             Mojím cieľom je postupne sa presunúť do IT oblasti ako programátor a neustále sa vzdelávať.
             <br />
